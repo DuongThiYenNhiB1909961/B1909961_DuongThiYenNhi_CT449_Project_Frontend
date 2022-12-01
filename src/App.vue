@@ -1,21 +1,27 @@
 <script>
-// import AppHeader from "@/components/AppHeader.vue";
-
+import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "./components/AppFooter.vue";
+import AppBody from "./components/AppBody.vue"
 export default {
-  // components: {
-  //   AppHeader,
-  // },
-};
+  components: {
+    AppHeader,
+    AppFooter,
+    AppBody,
+  },
+}
 </script>
 
 <template>
-  <h1>Hello, Vue.js!</h1>
-  <!-- <div id="app">
+  <div id="app">
     <AppHeader />
     <div class="container mt-3">
+      <AppBody />
+      
       <router-view />
     </div>
-  </div> -->
+    <AppFooter />
+  </div>
+
 </template>
 
 <style>
